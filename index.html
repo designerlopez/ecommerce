@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First E-commerce</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="navbar__container">
+            <a href="#" class="nav__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav__logo-icon">
+                    <g>
+                        <g>
+                            <!-- <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z"></path> -->
+                            <path
+                                d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                            </path>
+                        </g>
+                    </g>
+                </svg> Store
+            </a>
+
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="nav__buttons">
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                    <span id="cart-count" class="count">0</span>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== CART SHOP====================-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container"></div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">
+                <span id="items-count"> </span> items</span>
+            <span class="cart__prices-total" id="cart-total"></span>
+        </div>
+
+        <div class="cart__checkout">
+            <button class="button cart__btn" id="cart-checkout" disabled><i class='bx bxs-check-shield'></i>
+                Checkout</button>
+        </div>
+
+    </div>
+
+
+
+    <section class="home" id="home">
+        <div class="main__container">
+            <div class="main__background--img">
+                <img src="./img/home.png" alt="" class="main__img">
+            </div>
+
+            <div class="main__info">
+                <h1 class="title">New Sweatshirt <br> COLLECTIONS 2022</h1>
+                <p>
+                    Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a
+                    modern
+                    design.
+                </p>
+                <p class="offer__price">$14.00</p>
+
+                <div class="main__btns">
+                    <button class="btn--discover">Discover</button>
+                    <button class="btn__add">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="products" id="products">
+        <div class="products__container">
+            <ul class="products__filter">
+                <li class="products__item">
+                    <h3 class="products__title">
+                        Show All
+                    </h3>
+                    <span class="stock">
+                        show all products
+                    </span>
+                </li>
+
+                <li class="products__item">
+                    <h3 class="products__title">
+                        Hoodies
+                    </h3>
+                    <span class="stock">
+                        3 products
+                    </span>
+                </li>
+
+                <li class="products__item">
+                    <h3 class="products__title">
+                        Shirts
+                    </h3>
+                    <span class="stock">
+                        4 products
+                    </span>
+                </li>
+
+                <li class="products__item">
+                    <h3 class="products__title">
+                        Sweatshirts
+                    </h3>
+                    <span class="stock">
+                        4 products
+                    </span>
+                </li>
+            </ul>
+
+            <div class="products__container grid" id="products__container">
+                <!-- <div class="card" id="card">
+                    <div class="card__container--img">
+                        <img src="" alt="" class="product__img">
+                    </div>
+                    <div class="product__info">
+                        <h2 class="product__price">
+                            <span class="stock"></span>
+                        </h2>
+                        <h3 class="product__name">
+                        </h3>
+                        <button class="product_button">
+                            <i class="bx bx-plus"></i>
+                        </button>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+        </div>
+    </section>
+
+    </main>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
