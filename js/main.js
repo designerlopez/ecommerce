@@ -97,6 +97,29 @@ function pintarCartShop() {
     let html = ""
     const arrayShop = Object.values(objCartShop);
 
+    arrayShop.forEach((element)=>{
+        html += `
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="${element.image}" alt="${element.name}" class="cart__img">
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">${element.name}</h3>
+            <span class="cart__stock">Stock: ${element.quantity} | <span class="cart__price">${element.price}</span></span>
+            <span class="cart__subtotal">
+              Subtotal: ${(element.amount * element.price)}
+            </span>
+  
+
+
+        </article>`
+
+
+
+
+    })
+
 
     
     
@@ -104,22 +127,23 @@ function pintarCartShop() {
     contenedorCartShopItems.innerHTML = html
 
 }
-console.log(objCartShop);
+
 
 function addCartShop(id){
 
     const foundProduct = products.find(products => products.id === id);
 
-    for (const i in objCartShop) {
-        if (objCartShop[i]===foundProduct) {
-            objCartShop[foundProduct].amount++;
+    
+        if (objCartShop[foundProduct.id]===foundProduct) {
+            objCartShop[foundProduct.id].amount++;
 
         } else {
-            objCartShop[foundProduct] = foundProduct;
-            objCartShop[foundProduct].amount = 1;
+            objCartShop[foundProduct.id] = foundProduct;
+            objCartShop[foundProduct.id].amount = 1;
         }
             
-        }
+        
+        pintarCartShop();
         
     console.log(objCartShop)
     }
