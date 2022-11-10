@@ -88,12 +88,6 @@ function printTotal(){
 }
 
 
-
-
-
-
-
-
 function pintarProductos() {
 
     let html = ``;
@@ -108,7 +102,7 @@ function pintarProductos() {
                     </div>
                     <div class="product__info">
                         <h2 class="product__price">$${price}
-                            <span class="stock">${quantity}</span>
+                            <span class="stock"> En stock:  ${quantity}</span>
                         </h2>
                         <h3 class="product__name">${name}
                         </h3>
