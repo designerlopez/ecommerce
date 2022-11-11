@@ -11,6 +11,12 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="tenor-gif-embed" data-postid="19427546" data-share-method="host" data-aspect-ratio="1.33891" data-width="100%"><a href="https://tenor.com/view/naruto-gif-19427546">Naruto GIF</a>from <a href="https://tenor.com/search/naruto-gifs">Naruto GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+    </div>
+
+
     <header class="header" id="header">
         <nav class="navbar__container">
             <div class="nav-bar-left">
@@ -19,18 +25,18 @@
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">Home</a>
                         </li>
-                        
+
                         <li class="nav__item">
                             <a href="#products" class="nav__link">Products</a>
                         </li>
-                        
+
                     </ul>
 
                     <div class="nav__close" id="nav-close">
                         <i class='bx bx-x'></i>
                     </div>
                 </div>
-                
+
                 <a href="#" class="nav__logo">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav__logo-icon">
                         <g>
@@ -44,7 +50,7 @@
                     </svg> Store
                 </a>
             </div>
-            
+
 
             <div class="nav__buttons">
                 <div class="nav__shop" id="cart-shop">
@@ -69,17 +75,20 @@
 
         <div class="cart__prices">
             <span class="cart__prices-item">
-            <span id="items-count"></span> items</span>
+                <span id="items-count"></span> items</span>
             <span class="cart__prices-total" id="cart-total"></span>
         </div>
 
         <div class="cart__checkout">
-            <button class="button cart__btn" id="cart-checkout" >
+            <button class="button cart__btn" id="cart-checkout">
                 <i class='bx bxs-check-shield'></i>Checkout
             </button>
         </div>
 
     </div>
+
+
+
 
 
 
@@ -171,29 +180,82 @@
     </section>
 
     </main>
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our information</h3>
 
-    <div class="footer__content">
-        <h3 class="footer__title">Social</h3>
+                <ul class="footer__list">
+                    <li>Bogotá - Colombia</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
 
-        <ul class="footer__social">
-          <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-            <i class='bx bxl-facebook'></i>
-          </a>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
 
-          <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-            <i class='bx bxl-twitter'></i>
-          </a>
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
 
-          <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-            <i class='bx bxl-instagram'></i>
-          </a>
-        </ul>
-      </div>
-    </div>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Hoodies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Shirts</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Sweatshirts</a>
+                    </li>
+                </ul>
+            </div>
 
-    <span class="footer__copy">&#169; ACADEMLO. All rigths reserved</span>
-  </footer>
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
 
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; ACADEMLO. All rigths reserved</span>
+    </footer>
+
+
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+    <script>
+        const loader=document.getElementById("preloader");
+        if (loader) {
+    setTimeout(() => {
+      loader.style.display = 'none'
+    }, 2000)
+  }    </script>
 
 
 
